@@ -1,11 +1,11 @@
 # Sench Keypa: A Sencha Touch user extension
 
-Sencha Keypad was originally designed as a log in keypad for a mobile exam system called MobileLink at [BrightLink Technology](htp://thebrightlink.com).
+Sencha Keypad was originally designed as a log in keypad for a mobile exam system called MobileLink at [BrightLink Technology](http://thebrightlink.com).
 
 
 ## Demo
 
-![Screenshot](http://aehlke.github.com/tag-it/screenshot.png)
+![Screenshot](http://github.com/msmeeks/sencha-keypad/screenshot.png)
 
 Check the [example.html](http://github.com/msmeeks/sencha-keypad/example.html) for several demos.
 
