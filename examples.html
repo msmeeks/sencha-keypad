@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sencha Keypad Example</title>
+
+    <!-- These few CSS files are just to make this example page look nice. You can ignore them. -->
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset-fonts/reset-fonts.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/base/base-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Brawler' rel='stylesheet' type='text/css'>
+    <link href="css/master.css" rel="stylesheet" type="text/css">
+    <link href="css/examples.css" rel="stylesheet" type="text/css">
+    <!-- /ignore -->
+
+    <!-- Sencha Touch 1.1.1 -->
+    <script type="text/javascript" charset="utf-8" src="js/sencha-touch-1.1.1/sencha-touch.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/sencha-touch-1.1.1/resources/css/sencha-touch.css">
+
+    <!-- The real deal -->
+    <script src="js/Keypad.js" type="text/javascript" charset="utf-8"></script>
+
+    <script>
+		Ext.setup({
+			onReady: function () {
+				var basic = new Ext.ux.Keypad();
+				basic.render('basic');
+			}
+		});
+    </script>
+
+</head>
+<body>
+
+<a href="http://github.com/msmeeks/sencha-keypad"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub" /></a>
+
+<div id="wrapper"> 
+    <div id="header"> 
+        <h2>Sencha Keypad Usage Examples</h2> 
+    </div>
+    
+    <div id="content">
+        <p>These demo various features of Sencha Keypad. View the source to see how each works.</p>
+        <p>Note: These examples use Sencha Touch and will only work on browsers supported by this library.</p>
+
+        <hr>
+        <h3>Minimal</h3>
+		<p>
+			Vanilla example &mdash; the absolute minimum amount of code required, no configuration. No autocomplete, either. See the other examples for that.
+		</p>
+		<div id="basic"/>
+    </div>
+
+
+
+    <div id="footer"> 
+        <div class="left">
+            <p>Built with <a href="http://jquery.com/" target="_blank">Sencha Touch</a>.</p>
+            <p>Originally created by <a href="http://github.com/msmeeks">Michael S. Meeks</a>. Currently maintained by <a href="http://github.com/msmeeks">Michael S. Meeks</a>.</p>
+        </div>
+        <p class="right weak">Template adopted from <a href="http://orderedlist.com/demos/fancy-zoom-jquery/">orderedlist.com</a></p>
+        <br class="clear"/>
+    </div> 
+</div>
+</body>
+</html>
