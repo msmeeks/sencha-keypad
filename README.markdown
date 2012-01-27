@@ -5,9 +5,9 @@ Sencha Keypad was originally designed as a log in keypad for a mobile exam syste
 
 ## Demo
 
-![Screenshot](http://github.com/msmeeks/sencha-keypad/screenshot.png)
+![Screenshot](http://github.com/msmeeks/sencha-keypad/raw/master/screenshot.png)
 
-Check the [example.html](http://github.com/msmeeks/sencha-keypad/example.html) for several demos.
+Check the [example.html](http://github.com/msmeeks/sencha-keypad/raw/master/example.html) for several demos.
 
 
 ## Usage
