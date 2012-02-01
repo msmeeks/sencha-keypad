@@ -159,13 +159,13 @@ ul.tagit {
     position: relative;
     top: .1em;
 }
-#title-jquery, #title-tag-it {
+#title-sencha, #title-keypad {
     display: block;
 }
-#title-tag-it {
+#title-keypad {
     font-size: 1.2em;
 }
-#title-jquery {
+#title-sencha {
     font-size: .75em;
     font-weight: normal;
     position: relative;
