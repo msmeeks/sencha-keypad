@@ -66,12 +66,16 @@ Defaults to false.
 A function called when the submit button is clicked (can be used instead of the submited event). The handler is passed the following parameters:
 
 *  v : Number
+		
 		The value entered in the keypad.
 *  k : Keypad
+		
 		This keypad.
 *  b : Button
+		
 		The submit button.
 *  e : EventObject
+		
 		The click event.
 
 
