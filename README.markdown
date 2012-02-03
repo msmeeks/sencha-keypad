@@ -67,16 +67,16 @@ A function called when the submit button is clicked (can be used instead of the 
 
 *  v : Number
 		
-		The value entered in the keypad.
+	The value entered in the keypad.
 *  k : Keypad
 		
-		This keypad.
+	This keypad.
 *  b : Button
 		
-		The submit button.
+	The submit button.
 *  e : EventObject
 		
-		The click event.
+	The click event.
 
 
 ### submitParamName : String
