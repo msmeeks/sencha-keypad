@@ -1,4 +1,12 @@
-Events
+Examples:
+	o submit handler
+	o submit url
+	o custom text
+	o small ui
+	o centered
+	o title
+
+Events:
 	o beforesubmit
 	o aftersubmit
 	o beforeclear
