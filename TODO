@@ -1,0 +1,26 @@
+Events
+	o beforesubmit
+	o aftersubmit
+	o beforeclear
+	o afterclear
+	o keydown
+	o keyup
+	o keypressed
+
+# and * keys
+
+Alpha prmopts on keys (secondary text)
+
+Customizable text for keys
+
+Config options to toggle primary and secondary text
+
+Style support for display field
+
+Style support for all keys
+
+Style support for individual keys
+
+Better control of the size, or at least more size options
+
+Confom to sench standards for the ui config
