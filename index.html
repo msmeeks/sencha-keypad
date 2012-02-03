@@ -16,12 +16,12 @@
     <link href='http://fonts.googleapis.com/css?family=Brawler' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset-fonts/reset-fonts.css">
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/base/base-min.css">
-    <link href="css/master.css" rel="stylesheet" type="text/css">
     
     <!-- Sencha Touch 1.1.1 -->
     <script type="text/javascript" charset="utf-8" src="js/sencha-touch-1.1.1/sencha-touch.js"></script>
     <link rel="stylesheet" type="text/css" href="js/sencha-touch-1.1.1/resources/css/sencha-touch.css">
 
+    <link href="css/master.css" rel="stylesheet" type="text/css">
     <script src="js/Keypad.js" type="text/javascript" charset="utf-8"></script>
 
     <script>
@@ -36,76 +36,78 @@
 </head>
 <body>
 
-<a href="http://github.com/msmeeks/sencha-keypad"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
- 
-<div id="wrapper"> 
-	<div id="header"> 
-        <!--<img src="keypad_icon.png" id="keypad-icon">-->
-		<h1><span id="title-sencha">Sencha Touch</span><span id="title-keypad">Keypad</span></h1> 
-		<p>
-		    <em>Simple and configurable tag editing widget with autocomplete support.</em>
-		</p> 
+<div class="body">
+	<a href="http://github.com/msmeeks/sencha-keypad"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
+	 
+	<div id="wrapper"> 
+		<div id="header"> 
+			<!--<img src="keypad_icon.png" id="keypad-icon">-->
+			<h1><span id="title-sencha">Sencha Touch</span><span id="title-keypad">Keypad</span></h1> 
+			<p>
+				<em>Simple and configurable tag editing widget with autocomplete support.</em>
+			</p> 
+			
+			<ul id="nav">
+				<li><a href="http://github.com/msmeeks/keypad">Source</a></li>
+				<li><a href="http://github.com/msmeeks/keypad/issues">Bugs</a></li>
+				<li><a href="http://github.com/msmeeks/keypad/blob/master/README.markdown">Docs</a></li>
+				<li><a href="http://github.com/msmeeks/keypad/zipball/master">Download</a></li>
+			</ul>
+		</div>
 		
-		<ul id="nav">
-            <li><a href="http://github.com/msmeeks/keypad">Source</a></li>
-            <li><a href="http://github.com/msmeeks/keypad/issues">Bugs</a></li>
-            <li><a href="http://github.com/msmeeks/keypad/blob/master/README.markdown">Docs</a></li>
-            <li><a href="http://github.com/msmeeks/keypad/zipball/master">Download</a></li>
+		<div id="content">
+		
+		<ul id="feature-list">
+			<li>Source code is available at <a href="http://github.com/msmeeks/keypad" title="Social Coding">Github</a>.</li>
 		</ul>
-	</div>
-	
-	<div id="content">
-    
-    <ul id="feature-list">
-        <li>Source code is available at <a href="http://github.com/msmeeks/keypad" title="Social Coding">Github</a>.</li>
-    </ul>
 
-    <h2>Demo</h2>
-	<p id="basic"/>
+		<h2>Demo</h2>
+		<p id="basic"/>
 
-    <p>
-        <a href="examples.html" class="highlighted">See more examples</a> of different configuations.
-    </p>
+		<p>
+			<a href="examples.html" class="highlighted">See more examples</a> of different configuations.
+		</p>
 
-    <h2>Authors</h2>
-    <ul>
-        <li><a href="http://github.com/msmeeks">Michael S. Meeks</a> <em>(original author)</em></li>
-    </ul>
+		<h2>Authors</h2>
+		<ul>
+			<li><a href="http://github.com/msmeeks">Michael S. Meeks</a> <em>(original author)</em></li>
+		</ul>
 
-    <h2>License</h2>
-    <p>
-        Sencha-Keypad is released under the <a href="https://github.com/msmeeks/keypad/raw/master/LICENSE">MIT license</a>.
-    </p>
-	</div> 
+		<h2>License</h2>
+		<p>
+			Sencha-Keypad is released under the <a href="https://github.com/msmeeks/keypad/raw/master/LICENSE">MIT license</a>.
+		</p>
+		</div> 
 
-<!-- Disqus comments coming soon
-    <hr style="margin:3.5em 0 .5em 0;">
+	<!-- Disqus comments coming soon
+		<hr style="margin:3.5em 0 .5em 0;">
 
-    <div id="disqus-container">
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-            var disqus_shortname = 'msmeeks-github';
+		<div id="disqus-container">
+			<div id="disqus_thread"></div>
+			<script type="text/javascript">
+				var disqus_shortname = 'msmeeks-github';
 
-            // The following are highly recommended additional parameters. Remove the slashes in front to use.
-            var disqus_identifier = 'msmeeks-github-sencha-keypad-index-html';
-            var disqus_url = 'http://msmeeks.github.com/sencha-keypad/';
+				// The following are highly recommended additional parameters. Remove the slashes in front to use.
+				var disqus_identifier = 'msmeeks-github-sencha-keypad-index-html';
+				var disqus_url = 'http://msmeeks.github.com/sencha-keypad/';
 
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-    </div>
--->
+				/* * * DON'T EDIT BELOW THIS LINE * * */
+				(function() {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+		</div>
+	-->
 
- 
-	<div id="footer"> 
-		<p class="right weak">Template adopted from <a href="http://aehlke.github.com/tag-it">aehlke.github.com/tag-it/</a></p>
-		<br class="clear"/>
+	 
+		<div id="footer"> 
+			<p class="right weak">Template adopted from <a href="http://aehlke.github.com/tag-it">aehlke.github.com/tag-it/</a></p>
+			<br class="clear"/>
+		</div> 
 	</div> 
 </div> 
 </body> 
