@@ -1,5 +1,6 @@
+Fix the example page to handle multiple keypads better - probably use a Carousel.
+
 Examples:
-	o submit handler
 	o submit url
 	o custom text
 	o small ui
