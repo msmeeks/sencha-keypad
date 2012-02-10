@@ -24,6 +24,27 @@
 			onReady: function () {
 				var basic = new Ext.ux.Keypad();
 				basic.render('basic');
+
+
+				var handler = new Ext.ux.Keypad({
+					title: 'Handler',
+					submitHandler: function(val, keypad, button, e) {
+						Ext.Msg.show({
+							title: 'Handle it',
+							msg: 'You entered: ' + val + '<br/><br/>Would you like to clear the keypad?',
+							buttons: Ext.MessageBox.YESNO,
+							width: 300,
+							height: 200,
+							icon: Ext.MessageBox.QUESTION,
+							fn: function(btn) {
+								if (btn == 'yes') {
+									keypad.clear();
+								}
+							}
+						});
+					}
+				});
+				handler.render('handler');
 			}
 		});
     </script>
@@ -48,9 +69,14 @@
 			Vanilla example &mdash; the absolute minimum amount of code required, no configuration. It doesn't do anything useful either. See the other examples for that.
 		</p>
 		<div id="basic"/>
+
+        <hr>
+        <h3>Submit Handler</h3>
+		<p>
+			Example using a submit handler function.
+		</p>
+		<div id="handler"/>
     </div>
-
-
 
     <div id="footer"> 
         <div class="left">

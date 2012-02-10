@@ -36,15 +36,15 @@ Ext.ux.Keypad = function(config) {
 	});
 
 	this.submit_button = new Ext.Button({
-		text: config.submit_text || 'Submit',
+		text: config.submitText || 'Submit',
 		ui: button_ui,
-		handler: function() {
-			if (config.submit_url) {
+		handler: function(b, e) {
+			if (config.submitUrl) {
 				var params = {};
-				params[config.submit_param_name || 'value'] = this.getValue();
+				params[config.submitParamName || 'value'] = this.getValue();
 
 				Ext.Ajax.request({
-					url: config.submit_url,
+					url: config.submitUrl,
 					params: params,
 					success: function(response, opts){
 						var data = Ext.util.JSON.decode(response.responseText);
@@ -62,8 +62,8 @@ Ext.ux.Keypad = function(config) {
 					},
 					scope: this
 				});
-			} else if (config.submit_handler) {
-				config.submit_handler(this.getValue());
+			} else if (config.submitHandler) {
+				config.submitHandler(this.getValue(), this, b, e);
 			} else {
 				Ext.Msg.alert('No submission action specified','value: ' + this.getValue());
 			}
@@ -114,7 +114,7 @@ Ext.ux.Keypad = function(config) {
 			items: [{
 				xtype: 'button',
 				ui: button_ui,
-				text: 'Clear',
+				text: config.clearText || 'Clear',
 				handler: function(){
 					this.clear()
 				},scope:this
