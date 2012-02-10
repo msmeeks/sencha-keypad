@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Basic Example</title>
+
+    <!-- Sencha Touch 1.1.1 -->
+    <script type="text/javascript" charset="utf-8" src="../js/sencha-touch-1.1.1/sencha-touch.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/sencha-touch-1.1.1/resources/css/sencha-touch.css">
+
+    <!-- The real deal -->
+    <script src="../js/Keypad.js" type="text/javascript" charset="utf-8"></script>
+
+    <script>
+		Ext.setup({
+			onReady: function () {
+				var basic = new Ext.ux.Keypad();
+				basic.render('basic');
+			}
+		});
+    </script>
+
+</head>
+<body>
+	<div id="basic"/>
+</body>
+</html>
