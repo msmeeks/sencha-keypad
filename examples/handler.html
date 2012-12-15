@@ -2,19 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-<<<<<<< HEAD
-    <title>Basic Example</title>
-
-    <!-- Sencha Touch 1.1.1 -->
-    <script type="text/javascript" charset="utf-8" src="../js/sencha-touch-1.1.1/sencha-touch.js"></script>
-    <link rel="stylesheet" type="text/css" href="../js/sencha-touch-1.1.1/resources/css/sencha-touch.css">
-=======
     <title>Submit Handler Example</title>
 
     <!-- Sencha Touch 2.1.0 -->
     <script type="text/javascript" charset="utf-8" src="../js/sencha-touch-2.1.0/sencha-touch-all.js"></script>
     <link rel="stylesheet" type="text/css" href="../js/sencha-touch-2.1.0/resources/css/sencha-touch.css">
->>>>>>> master
 
     <!-- The real deal -->
     <script src="../js/Keypad.js" type="text/javascript" charset="utf-8"></script>
@@ -23,26 +15,6 @@
 		Ext.setup({
 			onReady: function () {
 				var handler = new Ext.ux.Keypad({
-<<<<<<< HEAD
-					title: 'Handler',
-					submitHandler: function(val, keypad, button, e) {
-						Ext.Msg.show({
-							title: 'Handle it',
-							msg: 'You entered: ' + val + '<br/><br/>Would you like to clear the keypad?',
-							buttons: Ext.MessageBox.YESNO,
-							width: 300,
-							height: 300,
-							icon: Ext.MessageBox.QUESTION,
-							fn: function(btn) {
-								if (btn == 'yes') {
-									keypad.clear();
-								}
-							}
-						});
-					}
-				});
-				handler.render('handler');
-=======
                     renderTo: 'handler',
 					submitHandler: function(val, keypad, button, e) {
 //						Ext.Msg.show({
@@ -62,18 +34,12 @@
                         keypad.clear();
 					}
 				});
->>>>>>> master
 			}
 		});
     </script>
 
 </head>
-<<<<<<< HEAD
-<body>
-	<div id="handler"/>
-=======
 <body style="background-color: lightgray;">
 	<div id="handler" style="z-index:1;"/>
->>>>>>> master
 </body>
 </html>
