@@ -12,10 +12,10 @@ Check the [examples.html](http://github.com/msmeeks/sencha-keypad/raw/master/exa
 
 ## Usage
 
-First, load [Sencha Touch](http://www.sencha.com/products/touch) (v1.1), and the keypad extension:
+First, load [Sencha Touch](http://www.sencha.com/products/touch) (v2.1), and the keypad extension:
 
-    <script type="text/javascript" charset="utf-8" src="js/sencha-touch-1.1.1/sencha-touch.js"></script>
-    <link rel="stylesheet" type="text/css" href="js/sencha-touch-1.1.1/resources/css/sencha-touch.css">
+    <script type="text/javascript" charset="utf-8" src="js/sencha-touch-2.1.0/sencha-touch-all.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/sencha-touch-2.1.0/resources/css/sencha-touch.css">
     <script src="js/Keypad.js" type="text/javascript" charset="utf-8"></script>
 
 Next, create an instance of the Keypad widget and render it to some element on the page.
@@ -23,8 +23,9 @@ Next, create an instance of the Keypad widget and render it to some element on t
     <script>
 		Ext.setup({
 			onReady: function () {
-				var basic = new Ext.ux.Keypad();
-				basic.render('keypad');
+				var basic = new Ext.ux.Keypad({
+                    renderTo: 'keypad'
+                });
 			}
 		});
     </script>
@@ -98,15 +99,6 @@ Defaults to 'Submit'.
 The url to which the value will be submitted.
 
 If a submitUrl is present, then the submitHandler will not be used, but the submitted event will still be fired.
-
-Defaults to ''.
-
-
-### title : String
-
-The title of the keypad.
-
-If a title is present, then a docked tool bar will be added to the keypad with the title text.
 
 Defaults to ''.
 
