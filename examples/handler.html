@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Basic Example</title>
+    <title>Submit Handler Example</title>
 
-    <!-- Sencha Touch 1.1.1 -->
-    <script type="text/javascript" charset="utf-8" src="../js/sencha-touch-1.1.1/sencha-touch.js"></script>
-    <link rel="stylesheet" type="text/css" href="../js/sencha-touch-1.1.1/resources/css/sencha-touch.css">
+    <!-- Sencha Touch 2.1.0 -->
+    <script type="text/javascript" charset="utf-8" src="../js/sencha-touch-2.1.0/sencha-touch-all.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/sencha-touch-2.1.0/resources/css/sencha-touch.css">
 
     <!-- The real deal -->
     <script src="../js/Keypad.js" type="text/javascript" charset="utf-8"></script>
@@ -15,30 +15,31 @@
 		Ext.setup({
 			onReady: function () {
 				var handler = new Ext.ux.Keypad({
-					title: 'Handler',
+                    renderTo: 'handler',
 					submitHandler: function(val, keypad, button, e) {
-						Ext.Msg.show({
-							title: 'Handle it',
-							msg: 'You entered: ' + val + '<br/><br/>Would you like to clear the keypad?',
-							buttons: Ext.MessageBox.YESNO,
-							width: 300,
-							height: 300,
-							icon: Ext.MessageBox.QUESTION,
-							fn: function(btn) {
-								if (btn == 'yes') {
-									keypad.clear();
-								}
-							}
-						});
+//						Ext.Msg.show({
+//							title: 'Handle it',
+//							message: 'You entered: ' + val + '<br/><br/>Would you like to clear the keypad?',
+//							buttons: Ext.MessageBox.YESNO,
+//							width: 300,
+//							height: 300,
+//							icon: Ext.MessageBox.QUESTION,
+//							fn: function(btn) {
+//								if (btn == 'yes') {
+//									keypad.clear();
+//								}
+//							}
+//						});
+                        alert('You entered: ' + val + '\n\nNow it is going to be cleared.');
+                        keypad.clear();
 					}
 				});
-				handler.render('handler');
 			}
 		});
     </script>
 
 </head>
-<body>
-	<div id="handler"/>
+<body style="background-color: lightgray;">
+	<div id="handler" style="z-index:1;"/>
 </body>
 </html>

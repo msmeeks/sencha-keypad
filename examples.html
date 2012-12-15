@@ -11,44 +11,6 @@
     <link href="css/master.css" rel="stylesheet" type="text/css">
     <link href="css/examples.css" rel="stylesheet" type="text/css">
     <!-- /ignore -->
-
-    <!-- Sencha Touch 1.1.1 -->
-    <script type="text/javascript" charset="utf-8" src="js/sencha-touch-1.1.1/sencha-touch.js"></script>
-    <link rel="stylesheet" type="text/css" href="js/sencha-touch-1.1.1/resources/css/sencha-touch.css">
-
-    <!-- The real deal -->
-    <script src="js/Keypad.js" type="text/javascript" charset="utf-8"></script>
-
-    <script>
-		Ext.setup({
-			onReady: function () {
-				var basic = new Ext.ux.Keypad();
-				basic.render('basic');
-
-
-				var handler = new Ext.ux.Keypad({
-					title: 'Handler',
-					submitHandler: function(val, keypad, button, e) {
-						Ext.Msg.show({
-							title: 'Handle it',
-							msg: 'You entered: ' + val + '<br/><br/>Would you like to clear the keypad?',
-							buttons: Ext.MessageBox.YESNO,
-							width: 300,
-							height: 200,
-							icon: Ext.MessageBox.QUESTION,
-							fn: function(btn) {
-								if (btn == 'yes') {
-									keypad.clear();
-								}
-							}
-						});
-					}
-				});
-				handler.render('handler');
-			}
-		});
-    </script>
-
 </head>
 <body>
 
@@ -64,18 +26,16 @@
         <p>Note: These examples use Sencha Touch and will only work on browsers supported by this library.</p>
 
         <hr>
-        <h3>Minimal</h3>
+        <h3><a href="examples/basic.html">Minimal</a></h3>
 		<p>
 			Vanilla example &mdash; the absolute minimum amount of code required, no configuration. It doesn't do anything useful either. See the other examples for that.
 		</p>
-		<div id="basic"/>
 
         <hr>
-        <h3>Submit Handler</h3>
+        <h3><a href="examples/handler.html">Submit Handler</a></h3>
 		<p>
 			Example using a submit handler function.
 		</p>
-		<div id="handler"/>
     </div>
 
     <div id="footer"> 
