@@ -97,10 +97,16 @@ Ext.define('Ext.ux.Keypad', {
             scope: this
         });
 
-        this.createDigitKey = function(digit) {
+        this.createDigitKey = function(digit, hidden) {
+            var style = key_style;
+            if (hidden) {
+            	style = key_style + 'visibility:hidden;';
+            }
+            
             return {
                 xtype: 'button',
                 text: digit,
+                style: style,
                 handler: function(){
                     this.addDigit(digit);
                 }, scope: this
@@ -134,7 +140,7 @@ Ext.define('Ext.ux.Keypad', {
             }, {
                 items: [this.createDigitKey('7'), this.createDigitKey('8'), this.createDigitKey('9')]
             }, {
-                items: [{},this.createDigitKey('0'),{}]
+                items: [this.createDigitKey('0', true),this.createDigitKey('0'), this.createDigitKey('0', true)]
             }, {
                 items: [
                     this.clearButton, 
